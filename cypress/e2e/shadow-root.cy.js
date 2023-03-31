@@ -5,7 +5,7 @@ describe("shadow_root_user_agent", () => {
     // get a pseudo element inside a shadow-root (user-agent)
     cy.get("#h5-player")
       .shadow()
-      .find('div[psudo="-webkit-media-controls"]')
+      .find('div[pseudo="-webkit-media-controls"]')
       .should("exist");
   });
 });
